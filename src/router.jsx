@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Scanner from "./pages/Scanner";
 import Pricing from "./pages/Pricing";
 import Profile from "./pages/Profile";
+import Logout from "./pages/Logout";
 
 const isAuthenticated = () => !!localStorage.getItem("auth_token");
 
@@ -22,6 +23,7 @@ export default function AppRouter() {
       <Route path="/register" element={<Register />} />
       <Route path="/guest" element={<GuestScanner />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/logout" element={<Logout />} />
 
       <Route
         path="/dashboard"

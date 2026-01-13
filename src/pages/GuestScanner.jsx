@@ -18,9 +18,9 @@ export default function GuestScanner() {
   return (
     <div className="p-10">
       <h2 className="text-2xl mb-4">Guest Scan</h2>
-      <Input label="URL" value={url} onChange={(e) => setUrl(e.target.value)} />
+      <Input className="border border-slate-700 rounded px-3 py-2" label="URL" value={url} onChange={(e) => setUrl(e.target.value)} />
       <Button onClick={handleScan} disabled={loading}>
-        {loading ? "Scanning..." : "Scan"}
+        {loading ? "Scanning..." : "Scan"} 
       </Button>
       {result && (
         <div className="mt-4 bg-slate-800 p-4 rounded">
